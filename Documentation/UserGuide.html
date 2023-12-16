@@ -1,0 +1,1772 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>TrainEasy | Documentation</title>
+	
+	<meta name="description" content="The official GForce Documentation">
+	<meta name="author" content="Intermatics">
+	<meta name="copyright" content="Intermatics">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2015-05-26T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="assets/css/custom.css" media="screen">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css_">
+
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='450',easing='easeOutExpo';</script>
+	<script src="assets/js/script.js_"></script>
+	
+	<style>
+		#documenter_sidebar #documenter_logo{
+			max-height:125px;
+			min-height:125px;
+		}
+		a{color:#111111;}
+		hr{border-top:1px solid #E5E5E5;border-bottom:1px solid #F9F9F9;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#191818;color:#F1F1F1;}
+		body #documenter_nav li a {text-align:left; padding-left:20px;}
+		#documenter_sidebar a {color:#cccccc; }
+		#documenter_sidebar ul a{text-decoration:none;font-weight:400; text-shadow:none; border:none;color:#888888;}
+		#documenter_sidebar ul a:hover{background:#222222; }
+		#documenter_sidebar ul a.current{background:#f0331b;color:#ffffff;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+       #documenter_content img{
+            max-width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+	</style>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="documenter-project-documenter-v20">
+	<div id="documenter_sidebar">
+		<div id="documenter_logo" style="position: relative">
+          <span style="font-size: 40px; text-align: center; position: relative;
+top: 40px;
+left: 30px;">TrainEasy</span>
+        </div>
+		<ul id="documenter_nav">
+            <li class="current"><a href="#welcome">Welcome</a></li>
+            <li><a href="#installation">Installation</a></li>
+
+            <li><a href="#settings">Settings</a></li>
+            <li><a href="#theme">Setting up a theme</a></li>
+            <li><a href="#registration">Customizing the Registration Form</a></li>
+            <li><a href="#roles">Managing Roles</a></li>
+            <li><a href="#admins">Managing Administrators & Instructors</a></li>
+            <li><a href="#classes">Managing Classes</a></li>
+            <li><a href="#lectures">Managing Lectures</a></li>
+            <li><a href="#lecturedownload">Managing Class & Lecture Downloads</a></li>
+            <li><a href="#courses">Creating Sessions & Courses</a></li>
+            <li><a href="#managingcourse">Managing Sessions & Courses</a></li>
+            <li><a href="#payments">Managing Invoices</a></li>
+            <li><a href="#editingstudents">Adding/Editing Students</a></li>
+            <li><a href="#bulkenroll">Bulk Enrolling Students</a></li>
+            <li><a href="#exportstudents">Importing/Exporting Students</a></li>
+            <li><a href="#createtest">Creating tests</a></li>
+            <li><a href="#managetest">Managing Tests</a></li>
+            <li><a href="#testtocourse">Assigning Tests to Sessions & Courses</a></li>
+            <li><a href="#paymentmethods">Configuring Payment Methods</a></li>
+            <li><a href="#createdownload">Creating a Download</a></li>
+            <li><a href="#coursedownloads">Adding files and sessions/courses to downloads</a></li>
+            <li><a href="#homework">Creating Homework</a></li>
+            <li><a href="#certificates">Managing Certificates</a></li>
+            <li><a href="#attendance">Managing Attendance</a></li>
+            <li><a href="#notes">Revision Notes</a></li>
+            <li><a href="#content">Content</a></li>
+            <li><a href="#upgrade">Upgrade Guide</a></li>
+            <li><a href="#zoom">Zoom Setup</a></li>
+            <li><a href="#frontend">Disable Frontend</a></li>
+            <li><a href="#dtheme">Dashboard Theme</a></li>
+
+		</ul>
+
+	</div>
+	<div id="documenter_content">
+
+        <section id="welcome">
+            <div class="content-header">
+                <h1>TrainEasy</h1>
+            </div>
+            <div class="welcome">
+                <h2 class="twenty">Welcome To TrainEasy</h2>
+                <p>Thank you for purchasing this application. If you have questions that are beyond the scope of this help file, <a href="mailto:info@intermaticsng.com">contact us</a>. </p>
+
+            </div>
+
+
+
+        </section>
+
+        <section id="installation">
+            <div class="content-header">
+                <h1>Installation</h1>
+            </div>
+            <h2 class="title">Installing TrainEasy</h2>
+
+            <div class="section-content">
+                <h3>SERVER REQUIREMENTS</h3>
+
+                <p>Before you begin installation, make sure you have a webserver that meets the following requirements:</p>
+                <p>
+                    <br></p>
+                <ul>
+                <li>PHP 8.1.2 or higher<br>
+                </li>
+                <li>MySQL &gt;= MySQL 5.7</li>
+                </ul>
+                
+                <h6>Ensure the following PHP extensions are installed</h6>
+                
+                <ul>
+                <li>
+                            ext-bcmath
+                        </li>
+                <li>
+                            ext-ctype</li>
+                <li>
+                
+                            ext-curl</li>
+                <li>
+                
+                            ext-dom</li>
+                <li>
+                
+                            ext-gd</li>
+                <li>
+                
+                            ext-hash</li>
+                <li>
+                
+                            ext-iconv</li>
+                <li>
+                
+                            ext-intl</li>
+                <li>
+                
+                            ext-mbstring
+                        </li>
+                <li>
+                            ext-openssl
+                        </li>
+                <li>
+                            ext-pdo_mysql
+                        </li>
+                <li>
+                            ext-simplexml
+                        </li>
+                <li>
+                            ext-soap
+                        </li>
+                <li>
+                            ext-xsl
+                        </li>
+                <li>
+                            ext-zip
+                        </li>
+                <li>
+                            lib-libxml
+                
+                        </li>
+                </ul>
+                <p>
+                    
+                
+                    <br></p>
+                <p>It is also strongly recommended that you install FFmpeg on your 
+                server. This will enable automatic generation of Video thumbnails</p>
+                
+                <p>If you are unable to install FFmpeg on your sever, you can specify
+                 the path to the FFmpeg and FFprobe binaries in  your .env file (in the application root). Simply fill in the following values</p>
+                <p>
+                    <br></p>
+                <pre>    <code>
+                FF_MPEG=""
+                FF_PROBE=""    </code>
+                  </pre>
+                <p>
+                    <br></p>
+                <p>You can still use TrainEasy without FFmpeg installed. However, you would need to manually upload thumbnails for uploaded videos.</p>
+                <p>
+                <br></p>
+                <ul>
+                <li>
+                        The TrainEasy installation file consists of a zip file that has the following contents when unzipped <br><img style="width: 598px;" src="https://intermaticsng.com/editor_images/05_2021/16208165256831.png" data-filename="clipboard.png"><br><br><br>
+                    </li>
+                <li>
+                        Upload the <strong>app.zip</strong> file into the root of your web server or wherever you would like the application to reside.
+                    </li>
+                <li>
+                        Extract the contents of the app.zip folder. You will see the following directory structure: <br><img style="width: 876px;" src="https://intermaticsng.com/editor_images/05_2021/16208165256297.png" data-filename="clipboard.png"><br><br><br>
+                        
+                    </li>
+                <li>We recommend that you point your domain name to the <strong>public</strong>
+                 directory. Your should be able to do this from your Hosting's control 
+                panel.
+                    Otherwise, you can use the .htaccess file located the the 
+                'Resources' directory. Simply upload this file to the same directory as 
+                the <strong>public</strong> folder and then change the [YOUR_DOMAIN_NAME] placeholder to your actual domain name<br><br>
+                </li>
+                <li>Open your web browser and enter the domain name for the application. You should see the setup wizard open like below: <br><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208165253512.png" data-filename="clipboard.png"><br><br>
+                </li>
+                <li>Click on the 'Check Requirements' button. The installer will check to ensure that you have all the required PHP extensions. <br><br><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208167651986.png" data-filename="clipboard.png"><br><br>
+                </li>
+                <li>If all extensions are available, click on the 'Check Permissions' button. If any extensions are missing, ensure you enable them on your server before proceeding.<br><img style="width: 515px;" src="https://intermaticsng.com/editor_images/05_2021/16208167654235.png" data-filename="clipboard.png"><br><br>
+                </li>
+                <li>Next, click on the 'Configure Environment' button (if any of the listed folders are not writable, make sure you correct this before proceeding).<br><img style="width: 543px;" src="https://intermaticsng.com/editor_images/05_2021/16208178748858.png" data-filename="clipboard.png"><br><br>
+                </li>
+                <li>Click on the 'Form Wizard Setup' button.<br><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208178746995.png" data-filename="clipboard.png"><br><br>Enter your 'App Name' (Usually your website/company name). Set 'App Debug' to 'False'. Change the 'App Url' to your website u. Leave other defaults and click 'Setup Database'. <br><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208178742028.png" data-filename="clipboard.png"><br><br>
+                </li>
+                <li>Enter in your Database credentials. Click 'Setup Application'<br><img src="http://demos.intermaticsng.com/carepro/docs/screenshots/wizard-dbsetup.png" style="width: 50%;"><br><br>Leave all the defaults in the next screen and click 'Install'<br><img src="https://intermaticsng.com/editor_images/05_2021/16208180383368.png" alt="" style="width: 50%;"><br><br><br>
+                </li>
+                <li>Once the installation is complete, you will see a page like below:<br><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208180382125.png" data-filename="clipboard.png"><br><br>
+                </li>
+                </ul>
+                <p><span style="color: rgb(17, 15, 15); font-family: Lato, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Click on the 'Click here to exit' button and you should then be directed to your homepage</span><br style="color: rgb(17, 15, 15); font-family: Lato, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span style="color: rgb(17, 15, 15); font-family: Lato, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"></span><img src="https://intermaticsng.com/editor_images/05_2021/16208185205610.png" alt="" style="width: 50%;"><br style="color: rgb(17, 15, 15); font-family: Lato, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><br></p>
+                <h2 style="margin: 20px 0px 18px; padding: 0px; border: 0px; outline: 0px; font-weight: 400; font-style: normal; font-size: 32px; font-family: Lato, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Setting up cron jobs</h2>
+                <p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 300; font-style: normal; font-size: 16px; font-family: Lato, sans-serif; vertical-align: baseline; line-height: 28px; color: rgb(17, 15, 15); font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">TrainEasy sends different notification messages automatically. To enable this, you need to setup the laravel task scheduler.<br>Create a cron job similar to this:<br>* * * * * cd /path-to-your-project &amp;&amp; php artisan schedule:run &gt;&gt; /dev/null 2&gt;&amp;1</p>
+                <p><br></p>
+                <h3 style="margin: 20px 0px 18px; padding: 0px; border: 0px; outline: 0px; font-weight: 400; font-style: normal; font-size: 32px; font-family: Lato, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">YOUR FIRST ADMIN ACCOUNT</h3>
+                <p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 300; font-style: normal; font-size: 16px; font-family: Lato, sans-serif; vertical-align: baseline; line-height: 28px; color: rgb(17, 15, 15); font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">When you install the application for the first time, a default Admin account is created for you. The credentials for this account are as follows:<br><strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; color: rgb(0, 0, 0); letter-spacing: 1px;">Email:</strong><span></span>admin@email.com<br><strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; color: rgb(0, 0, 0); letter-spacing: 1px;">Password:</strong><span></span>password<br><br>Click on the 'Login/Register' link at the top in order to login to your admin area. Make sure you change your email and password immediately you login.<br></p>
+                <p><br></p>
+                <ul>
+                </ul>
+            </div>
+
+        </section>
+
+
+        <section id="settings">
+            <h2 class="title">Settings</h2>
+            <div class="section-content">
+
+               <p>TrainEasy comes with a lot of configuration options that enable you 
+setup the application to suit your needs. To access the configuration 
+page, login to the
+    backend and go to 'Settings'-'Site Settings' </p>
+<p><img style="width: 277px;" src="https://intermaticsng.com/editor_images/05_2021/16208193179436.png" data-filename="clipboard.png"><br></p>
+<p></p>
+<p>The configuration page is as shown below: </p>
+<p></p>
+<p><img style="width: 1080px;" src="https://intermaticsng.com/editor_images/05_2021/16208201335254.png" data-filename="clipboard.png"><br></p>
+<p><br></p>
+<p>The following section explains the various configuration options <br>
+    <br></p>
+<ul>
+<li>General Tab
+        <ul>
+<li>
+<strong>Country/Currency:</strong> This controls the currency that is used for your website. Session fees will be formated based on this setting
+            and payment gateways will also be configured based on this</li>
+<li>
+<strong>Site Name:</strong> The site name should be the name of your organization. When the systems sends out email,it will use this as the sender name </li>
+<li>
+<strong>Homepage Title:</strong> This is the text that 
+will appear at the top of the browser for the homepage. It is very 
+important for search engine optimization</li>
+<li>
+<strong>Homepage Meta Description:</strong> This text is
+ used by search engines and othe robots to get a description about your 
+website. It is important you set this for search engine optimization 
+purposes</li>
+<li>
+<strong>Admin Email:</strong> This is the email address 
+that the system will use as the 'from' email when sending out 
+notifications and alerts to students and administrators</li>
+<li>
+<strong>Use SSL:</strong> Set this to Yes if you have SSL installed on your server. This enables the app to use https:// for all pages</li>
+<li>
+<strong>Header Scripts (advanced)</strong>: This can be used to add code (css or javascript) to the HEAD section of all pages of your site (Frontend only).</li>
+<li>
+<strong>Footer Scripts (advanced)</strong>: This can be used to add code before the closing BODY tag of all pages of the Frontend</li>
+<li>
+<strong>Disqus Shortname</strong>: This is used to 
+enable commenting on the Frontend. Visit <a class="vglnk" href="http://disqus.com" rel="nofollow"><span>disqus</span><span>.</span><span>com</span></a> and get your 
+shortname. Once you save it here, commenting will be enabled on the blog
+ and revision notes sections of the Frontend</li>
+<li>
+<strong>Discussion Instructions</strong>: This controls the instructions students see when they try to post a question using the discussion feature.</li>
+<li>
+<strong>Show Session Fees</strong>: This can be used to hide or show the <i>Fee</i> column on the session enrollment page of the Frontend</li>
+<li>
+<strong>Site IP Address</strong>: Here you can specify 
+the IP address of your server. If this is done, it will add extra 
+secuirity to your cron jobs i.e. the automatic reminder emails sent to 
+students and instructors. It ensures that the cron job can only be 
+triggered by your server</li>
+<li>
+<strong>Send Class Reminders</strong>: This controls if 
+the system should send reminders to students and instructors about 
+upcoming classes. Please note however that you still need to setup the 
+cron job for this to work. See the 'Setting Up Reminders' section for 
+more information</li>
+<li>
+<strong>Reminder Day</strong>: This specifies how many 
+days to a class should reminders be sent. The system will send out 
+reminders once a day every day before the day the class is scheduled to 
+hold.</li>
+<li>
+<strong>Site Timezone</strong>: This sets the timezone used by the entire site and the reminder system.</li>
+<li>
+<strong>Reminder Hour</strong>: This specifies the hour of the day when class reminders will be sent out.</li>
+<li>
+<b>Live Chat Code:</b>
+ In this box, you can paste a live chat embed code from your favorite 
+live chat service. This chat box will only be visible when students are 
+taking online courses for which live chat has been enabled.</li>
+<li>
+<b>Contact Address:</b> The contact address that will be displayed on your 'Contact Us' page</li>
+<li>
+<b>Contact Telephone No: </b>The telephone number displayed on the 'Contact Us' page</li>
+<li>
+<b>Contact Email: </b>The email address displayed on the 'Contact Us' page</li>
+<li>
+<b>Video Max Size: </b>The maximum size of videos (in megabytes) that can be uploaded. Please note that you PHP max_post_size value must be equal to or greater than this value for this to have any effect.<br>
+</li>
+</ul>
+        </li>
+<li>
+<strong>Logo and Icon Tab</strong>: Upload your website's logo and Favicon here. </li>
+<li>
+<strong>Menu Tab</strong>: Use this to hide or show various elements of the menu and header on the student's dashboard<br>
+</li>
+<li>
+<strong>Labels Tab</strong>: This section allows you to change the default text that is used in the general layout of the student's dashboard.</li>
+<li>
+<strong>Registration Tab</strong>:
+            <ul>
+<li>
+<strong>Enable registration?</strong>: Enables or disables the student registration form on the frontend</li>
+<li>
+<strong>Registration Instructions</strong>: Sets the text displayedat the top of the student registration form on the Frontend</li>
+<li>
+<strong>Successful Registration Email</strong>: Controls the text that is sent to a student after they register successfully.</li>
+<li>
+<strong>Send alert for enrollments:</strong> This 
+setting enables the adminstrators to get a notification email when a 
+studetn successfully enrolls for a session. For paid sessions, the alert
+ will only be sent after successfull payment.</li>
+<li>
+<strong>Send alert for registrations:</strong> This setting enables the administrators to get notified whenever a student fills the registration form successfully. </li>
+<li>
+<b>Confirm Student Emails:</b> This controls if students will need to confirm their emails after registration.</li>
+<li>
+<b>Captcha Type:</b> Select the type of Captcha that will be used for the registration and contact forms. We recommend Google reCaptcha v3.</li>
+<li>
+<b>Recaptcha Site Key:</b> Set this if you selected 'Google reCaptcha' above.</li>
+<li>
+<b>Recaptcha Secret Key:</b> Set this if you selected 'Google reCaptcha' above</li>
+<li>
+<b>Successful enrollment email:</b> Email message sent to the student after enrolling into a course/session.<br>
+</li>
+</ul>
+        </li>
+<li>
+<strong>Mail Tab</strong>: This setting allows you to use an
+ smtp server if you have one. Otherwise, you can use the default which 
+is PHP's native mail function.</li>
+<li>
+<b>Social Login Tab</b>: Set details for social login. </li>
+<li>
+<b>Zoom Settings Tab</b>: Set your Zoom API credentials here<br>
+</li>
+</ul>
+
+
+            </div>
+        </section>
+
+        <section id="theme">
+            <h2 class="title">Setting up a theme</h2>
+            <div class="section-content">
+ 
+                <p>TrainEasy comes with different Themes you can choose from. A
+                    Theme is a design that gives the public area of your TrainEasy
+                    application a special look. Each Theme comes with different options
+                    that enable you customize the general appearance and content of various
+                    aspects of the Theme.</p>
+                <p>To customize your current theme or choose a new one, go to 'Settings'-'Site Theme'</p>
+                <p></p>
+                <p>
+                    <img style="width: 264px;" src="https://intermaticsng.com/editor_images/05_2021/16208205342857.png" data-filename="clipboard.png"><br></p>
+                <p><br>The Themes page is split into two sections: Active Theme and All Themes. </p>
+                <p>
+                    <img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208205345521.png" data-filename="clipboard.png"><br></p>
+                <p><br></p>
+                <p>
+                    <br></p>
+                <p>The Active Theme section shows the currently installed Theme
+                    and also displays buttons for modifying the Theme. The 'All
+                    Themes' section displays all the available Themes you can choose
+                    from. Click on the 'Install' button if you would like to switch to a new
+                    Theme. To modify your existing Theme, click on the 'Customize'
+                    button. </p>
+                <p>Clicking the 'Customize' button presents two options: Settings and Colors</p>
+                <p>
+                    <img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208205341501.png" data-filename="clipboard.png"><br></p>
+                <p></p>
+                <p>
+                    <br></p>
+                <p>The 'Settings' button is the main option for modifying the Theme.
+                    It leads to a page that contains various forms for customizing the
+                    Theme. The 'Color' option leads to a page that enables you change the
+                    different major colors used by the Theme.<br></p>
+                <p>Clicking on the 'Settings' option leads to a page like below:</p>
+                <p>
+                    <img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208205342533.png" data-filename="clipboard.png"><br></p>
+                <p></p>
+                
+                <p>Please note that each Theme's settings page will give different options other than that shown in this image.</p>
+                <p>Clicking on any of the options opens the panel to reveal the controls available for modifying that option.</p>
+                <p></p>
+                <p>
+                    <img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208205341259.png" data-filename="clipboard.png"><br></p>
+                <p>
+                    Each option always has an 'Enabled' dropdown control at the top left.
+                    This can be used to completely enable or disable that option. Once you
+                    modify any of the content of an option, click on the 'Save Changes'
+                    button. Your changes will reflect on your portal immediately. <br></p>
+            
+            </div>
+
+            
+        </section>
+
+        <section id="registration">
+            <h2 class="title">Customizing the Registration Form</h2>
+            <div class="section-content">
+                <p></p>
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;">TrainEasy enables you to create additional fields for the
+student registration form. This is very useful if you need to collect extra
+data during registration. </span></p>
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;">To add new fields or edit existing fields, click on the Custom Student Fields menu option. </span></p>
+<p>
+
+            <img style="width: 270px;" src="https://intermaticsng.com/editor_images/05_2021/16208212004679.png" data-filename="clipboard.png"><br></p>
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;;mso-no-proof:yes"></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"></span></p>
+<p>
+
+            <br></p>
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;">Note: The following fields are already included in the
+form: First Name, Last Name, Email, Telephone Number, Password and Confirm
+Password. Hence you do not need to create them.</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;">To add a new field, click on the Add Field button</span></p>
+<p class="MsoNormal"><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208212003802.png" data-filename="clipboard.png"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;"><br></span></p>
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;"><br></span></p>
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;">The following fields are available:</span></p>
+<ol>
+<li>Label: This is the descriptive name of the field</li>
+<li>Input Type: This is the type of the field.Options include text, textarea, select etc.</li>
+<li>Mandatory: This specifies if the Student has to fill this field.</li>
+<li>Sort order: The position of the field relative to other fields in ascending order.</li>
+<li>Enabled: If the field is visible on the form or not.</li>
+<li>Student Editable: This determines if a student can modify the contents of this field. <br><br>
+</li>
+</ol><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208212002796.png" data-filename="clipboard.png"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><br></span>
+            </div>
+
+        </section>
+
+        <section id="roles">
+            <h2 class="title">Managing Roles</h2>
+         <div class="section-content">
+            <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                &quot;Arial&quot;,&quot;sans-serif&quot;">TrainEasy comes with a powerful role management system
+                that enables you to set permissions for every aspect of the backend. </span></p>
+                <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                &quot;Arial&quot;,&quot;sans-serif&quot;">A role is simply a collection of permissions that
+                specifies what administrators can or cannot do on the backend. By default, two
+                roles are provided after installation</span></p>
+                <ol>
+                <li><span style="font-size:12.0pt;line-height:115%;font-family:
+                &quot;Arial&quot;,&quot;sans-serif&quot;">Super Administrator</span></li>
+                <li><span style="font-size:12.0pt;line-height:115%;font-family:
+                &quot;Arial&quot;,&quot;sans-serif&quot;">Administrator</span></li>
+                </ol>These
+                 default roles can not be deleted. Also, the Super Administrator role 
+                can not be edited. The super administrator role has access to every 
+                aspect of the application. The administrator role by default has access 
+                to most features except the settings features. <br><p><u><b>Understanding Resources</b></u></p>
+                <p>A resource 
+                in TrainEasy refers to items created by administrators
+                which are privately owned. Such items include the following:</p>
+                <ol>
+                <li>Sessions &amp; Courses</li>
+                <li>Classes</li>
+                <li>Homework</li>
+                <li>Revision Notes</li>
+                <li>Downloads</li>
+                <li>Tests</li>
+                <li>Discussions</li>
+                <li>Certificates</li>
+                <li>Files<br>
+                </li>
+                </ol>
+                <p>The
+                 systems tracks who creates what, and by default, Instructors are only 
+                able to see and modify items that they create. There is a special 
+                permission that controls this feature. It is called 'Global Resource 
+                Access'. You can see this permission under the 'Miscellaneous' section 
+                when creating or editing roles.<br></p>
+                <p><u><b><br></b></u><img style="width: 1031px;" src="https://intermaticsng.com/editor_images/05_2021/16208214242293.png" data-filename="clipboard.png"><br></p>
+                <p>
+                
+                            </p>
+                <h2>Creating Roles<br>
+                </h2>
+                <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                &quot;Arial&quot;,&quot;sans-serif&quot;">To create a new role, click on the Roles menu option</span></p>
+                
+                <p class="MsoNormal"><img style="width: 266px;" src="https://intermaticsng.com/editor_images/05_2021/16208214243484.png" data-filename="clipboard.png"><span style="font-size:12.0pt;line-height:115%;font-family:
+                &quot;Arial&quot;,&quot;sans-serif&quot;;mso-no-proof:yes"></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"></span></p>
+                <p>
+                
+                            <br></p>
+                <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                &quot;Arial&quot;,&quot;sans-serif&quot;">This will open up the page containing all roles. Next click on the 'Add New' button</span></p>
+                <p>
+                
+                            <img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208214244382.png" data-filename="clipboard.png"><br></p>
+                <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                &quot;Arial&quot;,&quot;sans-serif&quot;;mso-no-proof:yes"></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"></span></p>
+                <br><p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                &quot;Arial&quot;,&quot;sans-serif&quot;">Enter in the role name and select all the permissions you
+                would like that role to have</span></p>
+         </div>
+        </section>
+
+        <section id="admins">
+            <h2 class="title">Managing Administrators & Instructors</h2>
+            <div class="section-content">
+                <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    ">You can create as many administrators and instructors as you wish. Each
+                    administrator/instructor is assigned a role that limits what they can do on the backend.
+                    To add a new administrator/instructor, click on the Administrators/Instructors menu option under 'Settings'</span></p>
+                    <p class="MsoNormal"><img style="width: 263px;" src="https://intermaticsng.com/editor_images/05_2021/16208217813484.png" data-filename="clipboard.png"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    "><br></span></p>
+                    <div>
+                    
+                    </div>
+                    
+                    
+                                <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    "></span><span style="font-size:12.0pt;line-height:115%;font-family:"></span></p>
+                    
+                                <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    "><br>Next, click on the Add New button.</span></p>
+                    <p class="MsoNormal"><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208217818357.png" data-filename="clipboard.png"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    "><br></span></p>
+                    
+                                <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    "></span><span style="font-size:12.0pt;line-height:115%;font-family:"></span></p>
+                    
+                                <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    ">On the Add Administrator page, fill in all the details
+                    for the administrator</span></p>
+            </div>
+        </section>
+
+        <section id="classes">
+            <h2 class="title">Managing Classes</h2>
+            <div class="section-content">
+                <p>In TrainEasy, classes are created independent of any courses or 
+                    sessions. This way, you have the opportunity to reuse classes across 
+                    multiple sessions or courses.</p>
+                    <p><br></p>
+                    <p>There are two types of classes in TrainEasy</p>
+                    <p><br></p>
+                    <ol>
+                    <li>
+                    <b>Online Class: </b>These
+                     are classes that are to hold online. They can be added to Online 
+                    courses or Training Sessions with online Classes. Online classes also 
+                    have 'Lectures' associated with them. Lectures break down a class into 
+                    multiple topics. A lecture must belong to a single class.<br>
+                    </li>
+                    <li>
+                    <b>Physical Location Class: </b>These
+                     are classes that are intended to be held at physical locations. They 
+                    can be added to Training Sessions or Training Sessions with online 
+                    Classes.</li>
+                    </ol>
+                    <p><br></p>
+                    <h2>Creating a class</h2>
+                    <p><br></p>
+                    <p>To create a class, go to 'Classes'-'Add Class'</p>
+                    <p><br></p>
+                    <p><img style="width: 241px;" src="http://static.traineasy.net/helpscreens/2017-12-11%2015_44_28.jpg"></p>
+                    <p><br></p>
+                    <p><br></p>
+                    <p><br></p>
+                    <p>The add class form has the following fields:</p>
+                    <p><br></p>
+                    <ol>
+                    <li>
+                    <b>Class Name: </b>The descriptive name of the class.</li>
+                    <li>
+                    <b>Class Type: </b>Use this to indicate if the class is an online or physical location class.<br>
+                    </li>
+                    <li>
+                    <b>Test Required: </b>This
+                     option will appear if 'Online Class' is selected as the class type. If 
+                    selected, it will force students to take a test before they can complete
+                     the class.</li>
+                    <li>
+                    <b>Test: </b>Sets the test required. It will only have an effect if 'Test Required' above is selected.<br>
+                    </li>
+                    <li>
+                    <b>Brief Description: </b>A descriptive text describing the class.</li>
+                    <li>
+                    <b>Enforce Lecture Order: </b>This setting ensures that students can only view lectures in the order that you set.</li>
+                    <li>
+                    <b>Introduction: </b>This field applies only to online classes. Enter the introductory content for the student here.</li>
+                    <li>
+                    <b>Class Groups: </b>Class
+                     groups offer a convenient way to organize classes internally. This 
+                    makes for easier sorting of classes during editing. Class groups are not
+                     visible to students.</li>
+                    <li>
+                    <b>Sort Order: </b>This sets the default 
+                    sort order for the class. The sort order determines the position of a 
+                    class relative to other classes in the assigned Session or Course. You 
+                    can still set the sort order of a class on the session/course level. 
+                    However, it is advisable to set them properly here as well.</li>
+                    <li>
+                    <b>Cover Image:</b> You can set a descriptive image of the class here.</li>
+                    </ol>
+                    <p><br></p>
+            </div>
+        </section>
+
+
+        <section id="lectures">
+            <h2 class="title">Managing Lectures</h2>
+            <div class="section-content">
+                <p>Lectures are the heartbeat of online classes. Each lecture consists 
+                    of pages of content which can contain Text. Video or Html code. Each 
+                    lecture can also only be associated with one class.</p>
+                    <p><br></p>
+                    <h2>Creating a lecture</h2>
+                    <p><br></p>
+                    <p>To create a lecture, first navigate to the class you will be adding the lecture to. Go to 'Classes'-'All Classes'.</p>
+                    <p><br></p>
+                    <p><img style="width: 243px;" src="http://static.traineasy.net/helpscreens/2017-12-11%2017_01_20.jpg"></p>
+                    <p><br></p>
+                    <p><br></p>
+                    <p><br></p>
+                    <p>On the the class list page, click 'Actions'-'Manage Lectures' for the class you are adding the lecture to.</p>
+                    <p><br></p>
+                    <p><img style="width: 50%;" src="http://static.traineasy.net/helpscreens/2017-12-11%2017_03_02.jpg"></p>
+                    <p><br></p>
+                    <p>On the next page, click on the 'Add Lecture Button'</p>
+                    <p><br></p>
+                    <p><img style="width: 50%;" src="http://static.traineasy.net/helpscreens/2017-12-11%2017_05_00.jpg"></p>
+                    <p><br></p>
+                    <p>A
+                     popup will appear. Enter in the lecture name and optional sort order. 
+                    Then click 'save changes'. the sort order determines the position of the
+                     Lecture relative to other lectures in that class. </p>
+                    <p><br></p>
+                    <p><img style="width: 50%;" src="http://static.traineasy.net/helpscreens/2017-12-11%2017_06_08.jpg"></p>
+                    <p><br></p>
+                    <p>Once
+                     you have successfully created the lecture, you will be automatically 
+                    redirected to the 'Lecture Content' page. This is where you get the add 
+                    the content of that lecture. You can add Text, Video or HTML code. 
+                    Clicking the 'Add Lecture Content' button gives you the following 
+                    options:</p>
+                    <p><br></p>
+                    <p><img style="width: 50%;" src="http://static.traineasy.net/helpscreens/2017-12-11%2017_09_01.jpg"></p>
+                    <p><br></p>
+                    <ol>
+                    <li>
+                    <b>Text: </b>Adding text is just as simple as entering the title and content of the text page. <br><img style="width: 50%;" src="http://static.traineasy.net/helpscreens/2017-12-11%2017_12_41.jpg"><br><br>
+                    </li>
+                    <li>
+                    <b>Video: </b>There
+                     are two methods of adding Video to a lecture. The first is using a URL 
+                    and the second is using video embed code. To add video, you need to 
+                    first upload the video file to your chosen video hosting service. We 
+                    strongly recommend <a href="https://join.vimeo.com/private-video-sharing/" target="_blank">Vimeo</a> for this due to the advanced privacy and security features they offer. <br>The
+                     URL method for adding video is the easiest method of adding a video. 
+                    You simply copy and paste the url of the video from your video hosting 
+                    service.<br><img style="width: 50%;" src="http://static.traineasy.net/helpscreens/2017-12-11%2017_20_25.jpg"><br><br>The
+                     video embed feature requires you to get the embed code from your 
+                    hosting service. This feature is useful if you want greater control over
+                     how the video displays.<br>
+                    </li>
+                    <li>
+                    <b>Html Code: </b>This is useful for trainers in the IT sector. It enables you to display raw html code.</li>
+                    </ol>
+                    <p><br></p>
+            </div>
+        </section>
+
+        <section id="lecturedownload">
+            <h2 class="title">Managing Class & Lecture Downloads</h2>
+            <div class="section-content">
+ 
+<p>TrainEasy gives you the ability to attach files to lectures and 
+    classes for enrolled students to download. You can attach multiple files
+     to a class or to individual lectures.</p>
+    <h4>Class Downloads</h4>
+    <p>To attach files to a class, navigate to the class list page by going to 'Classes'-'All Classes'</p>
+    <p><img style="width: 263px;" src="https://intermaticsng.com/editor_images/05_2021/1620822271573.png" data-filename="clipboard.png"><br></p>
+    <p>On the 'All Classes' page, for the class you are adding the file to, click 'Actions'-'Manage Downloads'<br></p>
+    <p><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/1620822271824.png" data-filename="clipboard.png"></p>
+    <p><br></p>
+    <p>On the class downloads page, click the 'Add File' button</p>
+    <p><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208222712411.png" data-filename="clipboard.png"><br></p>
+    <p></p>
+    <p>This will bring up the file manager box. <br><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208222719912.png" data-filename="clipboard.png"><br></p>
+    <p></p>
+    <p>On
+     the file manager, click the 'Upload' button to add a file from your 
+    hard disk. Once uploaded, double click the file to add it to the class.</p>
+    <p><br></p>
+    <h4>Lecture Downloads</h4>
+    <p>Adding
+     files to a lecture is a similar process to adding to classes. Simply 
+    navigate to the list of lectures for a class (from the class list page).
+     For a particular lecture, click on 'Actions'-'Manage Downloads'</p>
+    <p></p>
+    <p><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208222715210.png" data-filename="clipboard.png"><br><br></p>
+    
+            </div>
+        </section>
+
+        <section id="courses">
+            <h2 class="title">Creating Sessions & Courses</h2>
+            <div class="section-content">
+                <p>Once you have successfully created your classes, you can then create sessions and courses. In TrainEasy there are three types:</p>
+<p><br></p>
+<ol>
+<li>
+<b>Training Session: </b>A
+ training session is an event that is holding at a physical location on 
+set dates. You can only add 'Physical Location' classes to Training 
+Sessions.</li>
+<li>
+<b>Online Course: </b>An online course is a virtual training event. You can only add 'Online classes' to online courses.</li>
+<li>
+<b>Training Session with Online Classes: </b>This
+ is a training session holding at a physical location with optional 
+online classes. You can add both 'Physical Location' and 'Online 
+Classes' to these type of session.</li>
+</ol>
+<br>
+
+<h4>Creating an online course</h4>
+<p>To create an online course, go to 'Courses &amp; Sessions'-'Add New'-'Online Course'</p>
+<p><img style="width: 257px;" src="https://intermaticsng.com/editor_images/05_2021/16208224706326.png" data-filename="clipboard.png"><br></p>
+<p></p>
+<p><br></p>
+
+
+<p>The course creation page appears as below:</p>
+<p><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208224701590.png" data-filename="clipboard.png"><br></p>
+<p></p>The following fields are available for each session                <br>
+<p><br></p>
+<ul>
+<li>Course Name: A short descriptive name of the course</li>
+<li>Course Start Date: The date the course is scheduled to begin. If left blank, the course will not be available immediately.<br>
+</li>
+<li>Enrollment
+ Closes: The closing date for students to be able to enroll for the 
+course. The course can still be visible on the frontend after this date 
+but the                Enroll button will be unavailable. If left 
+blank, enrollment will not close.<br>
+</li>
+<li>Course End Date: The date 
+the course closes. After this date, the course will no longer be 
+available on the frontend. If left blank, the course will not end.<br>
+</li>
+<li>Payment Required: This specifies if a course is free or requires payment.</li>
+<li>Course
+ Fee: The fee charged for the course. This field only takes effect if 
+the                Payment Required field is set to Yes.</li>
+<li>Effort: A short text indicating how much effort a student is expected to put in to complete the course.</li>
+<li>Length: A short text indicating how long the course is expected to run for.</li>
+<li>Short Description: A short summary of the course. This is displayed on the course catalog page on the frontend.<br>
+</li>
+<li>Course Description: A detailed description about the course.</li>
+<li>Introduction: A brief introduction to the course. This is only displayed to enrolled students.</li>
+<li>Course
+ Categories: Sets what category or categories the course should belong 
+to. This controls where the course will be listed in the frontend. Note 
+that you will need to have already created the categories on the page 
+for managing categories.</li>
+<li>Course Instructors: Sets the 
+instructors for this course. It is important that you set this as it 
+controls who students are able to open discussions with.</li>
+<li>Status:
+ This controls if the course is visible on the frontend or not 
+regardless of other settings (start date, closing date etc). You will 
+usually want to set this to 'Disabled' while editing the course and 
+creating its content.</li>
+<li>Enable Discussions: Controls if students will be able to open discussions with the instructors assigned to this course.</li>
+<li>Enable
+ Live Chat: Controls if live chat should be made available to students 
+while taking this course. Note that you will need to have already saved 
+your live chat embed code on the Site Settings page for this to work 
+properly.</li>
+<li>Enforce Class Order: If this is set to 'Yes' then students will be forced to take classes in the order that you set them.</li>
+<li>Cover Image: Set a descriptive image for this course.<br>
+</li>
+<li>Select Classes: Select all the classes for the course You can also specify the opening date and position of the class.</li>
+</ul>
+<p><br></p>
+<br><h4>Creating a Training Session</h4>
+
+<p>
+To create a training session, go to 'Courses &amp; Sessions'-'Add 
+New'-'Training Session' or 'Courses &amp; Sessions'-'Add New'-'Training 
+Session with Online Classes' depending on the type of session you wish 
+to create</p>
+
+<p>. <img style="width: 257px;" src="https://intermaticsng.com/editor_images/05_2021/16208224706326.png" data-filename="clipboard.png"></p>
+<p><br></p>
+<p>The session creation page will open as shown below:</p>
+<p><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208226005888.png" data-filename="clipboard.png"><br></p>
+<br><p>The following fields are available for each session
+                <br></p>
+<p><br></p>
+<ul>
+<li>Session Name: A short descriptive name of the session</li>
+<li>Session Start Date: The date the first class in the session is scheduled to begin.</li>
+<li>Registration Closes: The closing date for students to be able to enroll for the
+                session. The session can still be visible on the frontend after this date but the
+                Enroll button will be unavailable.</li>
+<li>Session End Date: The date the last class in the session is scheduled to hold.
+                The session will no longer be visible on the frontend after this date.</li>
+<li>Payment Required: This specifies if a session is free or requires payment.</li>
+<li>Session Fee: The fee charged for the session. This field only takes effect if the
+                Payment Required field is set to Yes.</li>
+<li>Short Description: A short summary of the session. This is displayed on the session catalog page.<br>
+</li>
+<li>Session Description: A detailed description about the session and its classes.</li>
+<li>Status:
+  This controls if the session is visible on the frontend or not 
+regardless of other settings (start date, closing date etc).</li>
+<li>Venue: The location for the classes in the session. If classes will hold in multiple
+                locations, you can specify the venue for each individual class.</li>
+<li>Select Classes: Select all the classes for the session. You can also specify the
+                date and venue for the class if (different from the session venue). </li>
+</ul>
+<p><br></p>
+            </div>
+        </section>
+
+
+        <section id="managingcourse">
+            <h2 class="title">Managing Sessions & Courses</h2>
+            <div class="section-content">
+                <p>To manage existing sessions, click on the All Sessions &amp; Courses menu option <br><img style="width: 266px;" src="https://intermaticsng.com/editor_images/05_2021/16208230125693.png" data-filename="clipboard.png"><br></p>
+                <br><p><br>
+                
+                            This will lead to the page displaying all the created sessions and courses.
+                            </p>
+                <p><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208230121569.png" data-filename="clipboard.png"><br></p>
+                <p><br></p>
+                
+                <p>
+                            <br>
+                            On this page there are various tools available for managing the session/course and the
+                            Students enrolled for it. <br>
+                            The Total Enrolled links displays the total number of students that have enrolled into the session/course. You can quickly view these students by clicking on the link as shown below: <br><img style="width: 354px;" src="https://intermaticsng.com/editor_images/05_2021/16208230127943.png" data-filename="clipboard.png"></p>
+                <p><br>
+                            This will bring up a modal box as shown below: <br><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208230121193.png" data-filename="clipboard.png"><br><br><br>
+                            You will also notice an Export button in the Total Enrolled column. Clicking this button
+                            reveals the following options: <br><img style="width: 542px;" src="https://intermaticsng.com/editor_images/05_2021/16208230124984.png" data-filename="clipboard.png"><br>
+                            The options are described below
+                            <br></p>
+                <p><br></p>
+                <ul>
+                <li>Export Students: This will generate a csv file containing all the students that have
+                                    enrolled for the session/course.</li>
+                <li>Export Students (Attendance Import): This will generate a csv file that will enable
+                                    you to set the attendance records for students offline and then import back later.
+                                    This will be discussed later.</li>
+                <li>Attendance 
+                Sheet: This will open a web page that you can print. It contains the
+                                    students mandatory details and a start and end 
+                column for each class. The
+                                    attendance sheet is intended for Students to sign 
+                when they arrive at a class. This option is not available for courses<br><img src="http://demo.traineasy.net/documentation/assets/images/2017-02-17%2016_12_41-detailed_manual.pdf%20-%20Adobe%20Acrobat%20Reader%20DC.jpg" alt="">
+                </li>
+                <li>Telephone Numbers: This will generate a csv file containing just the telephone
+                                    numbers of students enrolled in the session/course. You can use this to easily send bulk
+                                    sms to students.</li>
+                </ul>
+                <p><br></p>
+                <p>
+                
+                            The Actions buttons display 
+                various options. The pencil and trash icons are used to edit or 
+                delete a session/course respectively.
+                            </p>
+                <p><img style="width: 414px;" src="https://intermaticsng.com/editor_images/05_2021/16208230125442.png" data-filename="clipboard.png"><br></p>
+                <p></p>
+                <p><br></p>
+                <ol>
+                <li>Edit: enables you edit a session/course</li>
+                <li>View
+                 Enrolled Students: Opens a page for viewing all students in the 
+                session/course. This page also displays the progress each student has 
+                made.<br><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/1620823012961.png" data-filename="clipboard.png"><br>On
+                 this page, you can click various buttons such as the 'Student Progress'
+                 button (which displays detailed class attendance and test results), 
+                'Un-enroll' which enables you remove the student from the session/course,
+                 view and edit buttons for viewing/editing the student's profile.<br><br>
+                </li>
+                <li>Manage
+                 Instructors: This options opens a page that lets you set the 
+                instructors for each class in a training session. It is not applicable 
+                to online courses.</li>
+                <li>Send Email to enrolled students; This lets you easily send an email to all students in the session</li>
+                <li>Duplicate: creates an exact copy of a session/course.</li>
+                <li>Change
+                 session type: This enables you change the type of a training session 
+                i.e with out without online classes. It is not applicable to online 
+                courses.</li>
+                <li>Delete: Deletes a session/course.</li>
+                </ol>
+                <p><br></p>
+            </div>
+        </section>
+
+        <section id="payments">
+            <h2 class="title">Managing Invoices</h2>
+            <div class="section-content">
+                <p>TrainEasy comes with a powerful invoicing feature that enables you manage and create invoices for your students. To access the invoicing page, please visit 'Courses &amp; Sessions'-'Invoices'</p>
+                <p><img style="width: 270px;" src="https://intermaticsng.com/editor_images/05_2021/16208264126193.png" data-filename="clipboard.png"></p>
+                <p><br></p>
+                <p>You will see a list of available invoices</p>
+                <p><br></p>
+                <p><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208264125211.png" data-filename="clipboard.png"></p>
+                <p><br></p>
+                <p>The 'Items' column contains buttons that, when clicked, reveal the courses associated with that invoice. The 'Actions' buttons give you and option to approve an invoice or delete it. When you approve an invoice, the student is automatically enrolled into the associated courses for that invoice.<br></p>
+                <p>Clicking on the 'Add New' button presents a modal dialog that enables you create an invoice for a user.</p>
+                <p><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208264127338.png" data-filename="clipboard.png"></p>
+                <p><br></p>
+                <p>The 'User' field enables you search for a student. You need to type the student name or email address to bring up the student. The 'Courses' dropdown enables you select multiple courses to be included in the invoice. The amount field enables you specify the amount you wish to charge the student for the invoice. If omitted, the price of the courses will be automatically calculated and used for the invoice. You can also select the currency. This only works if you specify a manual amount. You can set the status as paid or unpaid. If set to paid, the student will be automatically enrolled once you create the invoice.</p>
+                <p>Also note that, if you set an amount that is different from the calculated prices of the courses you select, it will only be useful if you approve the invoice from the backend. If a student attempts to pay for the invoice from the frontend, the price will revert to the calculated price of the courses. This is a security measure.<br></p>
+                <p><br></p>
+            </div>
+        </section>
+
+        <section id="editingstudents">
+            <h2 class="title">Adding/Editing Students</h2>
+            <div class="section-content">
+                <p>To add a new Student to TrainEasy, go to 'Students'-'Add Student'</p>
+                <p><img style="width: 273px;" src="https://intermaticsng.com/editor_images/05_2021/16208264942527.png" data-filename="clipboard.png"><br></p>
+                <p></p>
+                <p>This opens the student creation page as shown below:</p>
+                <p></p>
+                <p><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/1620826494432.png" data-filename="clipboard.png"><br></p>
+                <p>To edit a student, go to 'Students'-'View Students' and click on the 'Edit' button for your selected student.<br></p>
+                <p><br></p>
+            </div>
+        </section>
+
+
+        <section id="bulkenroll">
+            <h2 class="title">Bulk Enrolling Students</h2>
+            <div class="section-content">
+                <p>TrainEasy enables you to enroll multiple students to a session/course by
+                    uploading a csv file. To do is, go to 'Students'-'Bulk Enroll'</p>
+                    <p><img src="https://intermaticsng.com/editor_images/05_2021/1620826585753.png" alt=""></p>
+                    <p><br></p>
+                    <p>A sample csv file is available for download. Simply
+                    download this file and fill in the details for each student. Each student is
+                    uniquely identified by their email address. If a student does not exist, a new
+                    record will be created for them using the details specified, thereafter they
+                    are enrolled for the session. If a student already exists, they are simply
+                    enrolled for the session/course.</p>
+                    <p></p>
+                    <p><img src="https://intermaticsng.com/editor_images/05_2021/16208265858824.png" alt="" style="width: 50%;"></p>
+                    <p><br></p>
+                    <p><br></p>
+            </div>
+        </section>
+
+        <section id="exportstudents">
+            <h2 class="title">Importing/Exporting Students</h2>
+            <div class="section-content">
+                <p>You can easily import a large number of students into TrainEasy. You can also export all students into a single csv file.</p>
+                <p>Navigate to 'Students'-'Import Export'</p>
+                <p><img src="https://intermaticsng.com/editor_images/05_2021/1620826585753.png" alt=""><br></p>
+                <p></p>
+                <p>If you wish to import students, it is important that your uploaded csv file is in the right format. A sample csv file is provided for this purpose.</p>
+                <p><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/1620826658827.png" data-filename="clipboard.png"><br></p>
+                <p><br></p>
+            </div>
+        </section>
+
+        <section id="createtest">
+            <h2 class="title">Creating tests</h2>
+            <div class="section-content">
+            
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+    ">TrainEasy comes with a powerful computer based testing
+    (cbt) feature. With this feature, you can create tests/exams/quizzes for your
+    students to take on the frontend. <span style="mso-spacerun:yes"> </span>You
+    can then generate a list of students that passed the test based on a passmark
+    you set.</span></p>
+    <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+    ">To create a new test, click on the Tests menu option.
+    Next, click on Add Test</span></p>
+    <p>
+    
+                <img style="width: 264px;" src="https://intermaticsng.com/editor_images/05_2021/16208270439671.png" data-filename="clipboard.png"><br></p>
+    <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+    ">On the Add Test page, you will see the following
+    fields/options</span></p>
+    <ol>
+    <li><span style="font-size:12.0pt;line-height:115%;font-family:">Test
+    Name: A short descriptive name of the test</span></li>
+    <li><span style="font-size:12.0pt;line-height:115%;font-family:">Instructions:
+    Type in any instructions you would like students to read before taking the
+    test.</span></li>
+    <li><span style="font-size:12.0pt;line-height:115%;font-family:">Status:
+    This controls if the test becomes visible on the frontend or not.</span></li>
+    <li><span style="font-size:12.0pt;line-height:115%;font-family:">Pass
+    Mark: Set this as a percentage i.e. 0-100. It sets the minimum score a student
+    must make in order to pass the test.</span></li>
+    <li><span style="font-size:12.0pt;line-height:115%;font-family:">Time
+    Allowed: This enables you to set a time limit for a test.</span></li>
+    <li>
+    <span style="font-size:12.0pt;line-height:115%;font-family:"></span><span style="font-size:12.0pt;line-height:115%;font-family:">Allow
+    Multiple Attempts: This controls if a student can take the test multiple times.</span>
+    </li>
+    <li>
+    <span style="font-size:12.0pt;line-height:115%;font-family:"></span><span style="font-size:12.0pt;line-height:115%;font-family:">Private Test: </span>Tests
+     can be marked as private or public. Private tests are tests that are 
+    only available to students that are enrolled in sessions that specify 
+    the test as a requirement.</li>
+    <li>
+    <span style="font-size:12.0pt;line-height:115%;font-family:">Show result to student: This specifies if a student should be informed if they passed the test after taking it.<br></span><span style="font-size:12.0pt;line-height:115%;font-family:"><br></span>
+    </li>
+    </ol>
+    <img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208270439522.png" data-filename="clipboard.png"><span style="font-size:12.0pt;line-height:115%;font-family:
+    "><br><span style="mso-no-proof:yes"></span></span>
+    <p>After you add a test, you will be automatically redirected to a page where you can add new questions and options to your test
+    
+    </p>
+    
+    <p>
+    
+                <img style="width: 381px;" src="https://intermaticsng.com/editor_images/05_2021/16208270438781.png" data-filename="clipboard.png"><br></p>
+    <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+    ">Clicking on the Add Question button will bring up a pop
+    up that will enable you to easily add a question</span></p>
+    <p>
+    
+                <img style="width: 423px;" src="https://intermaticsng.com/editor_images/05_2021/16208270434537.png" data-filename="clipboard.png"><span style="font-size:12.0pt;line-height:115%;font-family:
+    "><br></span></p>
+    <p><span style="font-size:12.0pt;line-height:115%;font-family:
+    ">There is also a feature for importing questions from a CSV file. Clicking on 'Import Questions' brings up the following modal </span></p>
+    <p><img style="width: 549px;" src="https://intermaticsng.com/editor_images/05_2021/16208270438147.png" data-filename="clipboard.png"><span style="font-size:12.0pt;line-height:115%;font-family:
+    "><br></span></p>
+    <p><span style="font-size:12.0pt;line-height:115%;font-family:
+    "><br></span></p>
+    <p><span style="font-size:12.0pt;line-height:115%;font-family:
+    ">There is a link to a sample csv file that you can use to generate a compatible csv file.<br></span></p>
+    <p><span style="font-size:12.0pt;line-height:115%;font-family:
+    "><br></span><br></p>
+    
+            </div>
+        </section>
+
+
+        <section id="managetest">
+            <h2 class="title">Managing Tests</h2>
+            <div class="section-content">
+                <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    &quot;Arial&quot;,&quot;sans-serif&quot;">To modify or manage your existing tests, simply click on
+                    the All Tests menu option</span></p>
+                    <p>
+                    
+                                <img style="width: 265px;" src="https://intermaticsng.com/editor_images/05_2021/16208273701682.png" data-filename="clipboard.png"><br></p>
+                    <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    &quot;Arial&quot;,&quot;sans-serif&quot;;mso-no-proof:yes"></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"></span></p>
+                    
+                    <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    &quot;Arial&quot;,&quot;sans-serif&quot;"></span></p>
+                    <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    &quot;Arial&quot;,&quot;sans-serif&quot;">On the All Tests page, take note of the following
+                    options</span></p>
+                    <p class="MsoNormal"><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208273706091.png" data-filename="clipboard.png"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    &quot;Arial&quot;,&quot;sans-serif&quot;;mso-no-proof:yes"><br></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"></span></p>
+                    <p>
+                    
+                                <br></p>
+                    <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    &quot;Arial&quot;,&quot;sans-serif&quot;"></span></p>
+                    <p>
+                    
+                                <br></p>
+                    <p class="MsoListParagraphCxSpFirst" style="text-indent:-.25in;mso-list:l5 level1 lfo13"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+                    mso-fareast-font-family:Arial"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">The
+                    Attempts button: Click on this button to view all the results of tests that
+                    students have taken.<br></span><img style="width: 168px;" src="https://intermaticsng.com/editor_images/05_2021/16208273704808.png" data-filename="clipboard.png"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><span style="mso-no-proof:yes"></span><br><br>
+                    Clicking this button will open a new page displaying all the results.<br></span><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208273709510.png" data-filename="clipboard.png"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><span style="mso-no-proof:yes"></span><br style="mso-special-character:line-break"></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><br style="mso-special-character:line-break"></span></p>
+                    <p>
+                    
+                                <br></p>
+                    <p class="MsoListParagraphCxSpMiddle" style="text-indent:-.25in;mso-list:l5 level1 lfo13"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+                    mso-fareast-font-family:Arial"><span style="mso-list:Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Managing
+                    Questions: On the Tests page, you can manage the questions for a test by
+                    clicking on the Manage Questions icon.</span></p>
+                    <p class="MsoListParagraphCxSpMiddle" style="text-indent:-.25in;mso-list:l5 level1 lfo13"><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208273706190.png" data-filename="clipboard.png"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><br><span style="mso-no-proof:yes"></span></span></p>
+                    <p class="MsoListParagraphCxSpMiddle" style="text-indent:-.25in;mso-list:l5 level1 lfo13"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><span style="mso-no-proof:yes"><br></span><br>
+                    On the page that opens, you will be able to add new questions or modify
+                    existing questions.<br><span style="mso-no-proof:yes"></span></span></p>
+                    <p>
+                    
+                                <img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208273704871.png" data-filename="clipboard.png"><br></p>
+                    <p class="MsoListParagraphCxSpMiddle" style="text-indent:-.25in;mso-list:l5 level1 lfo13"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+                    mso-fareast-font-family:Arial"><span style="mso-list:Ignore">3.<span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Duplicate
+                    a Test: Sometimes you would like to create a new test based on a previous test.
+                    The duplicate option gives you the ability to create an exact copy of an
+                    existing test without having to type questions and options all over again</span></p>
+                    <p class="MsoListParagraphCxSpMiddle" style="text-indent:-.25in;mso-list:l5 level1 lfo13"><img style="width: 421px;" src="https://intermaticsng.com/editor_images/05_2021/16208273701208.png" data-filename="clipboard.png"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><br><span style="mso-no-proof:yes"></span></span></p>
+                    <p>
+                    
+                                <span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+                    mso-fareast-font-family:Arial"><span style="mso-list:Ignore">4.<span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Edit
+                    and Delete: Pencil and Trash icons are used to edit or delete a test.</span><br></p>
+            </div>
+        </section>
+
+        <section id="testtocourse">
+            <h2 class="title">Assigning Tests to Sessions & Courses</h2>
+            <div class="section-content">
+                <p>TrainEasy enables you assign Tests to courses and sessions. If you assign a Test to an online course, students will be required to complete the Tests before they can complete the course. You also have the ability to specify opening and closing dates for Tests.<br><br>There are two ways to assign Tests to a session/course, from the session/course management section or from the Test management section. Assigning Tests from the session/course management section is useful if you would like to assign multiple Tests to a single course. Assigning from the Test management section is useful if you wish to assign a single Test to multiple sessions/courses. This section if especially important for Instuctors how may not have permission to modify a session/course (if they did not create &amp; lack global resource access for example) but are assigned as instructors to it. Such instructors can assign tests they create to a session(s) from the Test management section.</p>
+                <p><u><b>Assigning Tests from the Sessions/Courses section</b></u></p>
+                <p>To assign tests to a course from the sessions/courses section, navigate to the session/courses management page</p>
+                <p></p>
+                <p><img src="https://intermaticsng.com/editor_images/05_2021/16208290454668.png" alt=""></p>
+                <p>Click on the 'Actions' button for the session/course you wish to modify. Select 'Manage tests'<br></p>
+                <p></p>
+                <p><img style="width: 352px;" src="https://intermaticsng.com/editor_images/05_2021/16208290459490.png" data-filename="clipboard.png"><br></p>
+                <p>On the test management page, click on 'Add Test'</p>
+                <p></p>
+                <p><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208290456346.png" data-filename="clipboard.png"><br></p>
+                <p><br></p>
+                <p>On the Test assignment page, select the Test you wish to add from the dropdown. You can optionally select Opening and Closing dates. </p>
+                <p><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208290455442.png" data-filename="clipboard.png"><br></p>
+                <p>Please note that for the Opening and Closing dates to work, the test must be a private test. Setting dates for public tests will have no effect.</p>
+                <p><br><u><b>Assigning Tests from the Test Management section</b></u><br>To assign tests to Sessions/Courses from the test management section, go to the test management page (Tests-&gt;All Tests)<br></p>
+                <p> <img style="width: 256px;" src="https://intermaticsng.com/editor_images/05_2021/16208290451256.png" data-filename="clipboard.png"><br></p>
+                
+                <p>For the test you wish to assign, click the 'Options' button and select 'Manage Sessions &amp; Courses'</p>
+                <p><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208290458965.png" data-filename="clipboard.png"><br></p>
+                <p><br></p>
+                <p>On the next page, click on 'Add to Session/Course'</p>
+                <p><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208291182386.png" data-filename="clipboard.png"><br></p>
+                <p><br></p>
+                <p>This will bring up a page like below:</p>
+                <p><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208291183608.png" data-filename="clipboard.png"><br></p>
+                <p><br></p>
+                <p>On this page, simply select the Session/Course you wish to add. The rules for the opening and closing dates are similar to that mentioned earlier.<br><br></p>
+            </div>
+        </section>
+
+        <section id="paymentmethods">
+            <h2 class="title">Configuring Payment Methods</h2>
+            <div class="section-content">
+                <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    " arial="">TrainEasy ships with multiple payment methods for
+                    receiving payment for session/course enrollment.</span></p>
+                    <p>Each payment method will automatically use the currency
+                    you configured for your site. So make sure the method supports your currency
+                    before enabling it.
+                    
+                                <br></p>
+                    <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    " arial="">To configure a method, click on the Payment Methods
+                    menu option</span></p>
+                    <p>
+                    
+                                <img src="https://intermaticsng.com/editor_images/05_2021/16208292498886.png" alt=""></p>
+                    <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    " arial=""></span><span style="font-size:12.0pt;line-height:115%;font-family:" arial=""></span></p>
+                    <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    " arial=""></span></p>
+                    <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    " arial="">The list of available methods will be displayed:</span></p>
+                    <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    " arial=""></span></p>
+                    <p>
+                    
+                                <img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208292499635.png" data-filename="clipboard.png"><br></p>
+                    <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    " arial="">Click on the Edit button for a method to configure it.</span></p>
+                    <p>
+                    
+                                <img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208295344259.png" data-filename="clipboard.png"><br></p>
+                    <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    " arial=""></span><span style="font-size:12.0pt;line-height:115%;font-family:" arial=""></span></p>
+                    <p>
+                    
+                                <br></p>
+                    <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    " arial="">Fill in the relevant credentials/details and save. </span></p>
+                    <p>
+                    
+                                <span style="font-size:12.0pt;line-height:115%;font-family:
+                    " arial="">Note that you will need to get the credentials from the
+                    respective gateway website.</span></p>
+                    <p><span style="font-size:12.0pt;line-height:115%;font-family:
+                    " arial=""><br></span></p>
+                    <h4><span style="font-size:12.0pt;line-height:115%;font-family:
+                    " arial="">Payment Method Currencies<br></span></h4>
+                    <p><span style="font-size:12.0pt;line-height:115%;font-family:
+                    " arial="">Each payment method can be assigned to either all currencies or a specific list of currencies. If you wish for your payment method to be available for all currencies, make sure you check to 'All Currencies' checkbox. If however, you wish for a payment method to be available only for a specific currency, uncheck the 'All Currencies' check box. When you do this, you will notice that a 'Currencies' tab will become visible.</span></p>
+                    <p><img style="width: 376px;" src="https://intermaticsng.com/editor_images/05_2021/16208295347682.png" data-filename="clipboard.png"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    " arial=""><br></span></p>
+                    <p><span style="font-size:12.0pt;line-height:115%;font-family:
+                    " arial="">Once you click this tab, you can add your currencies</span></p>
+                    <p><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208295344747.png" data-filename="clipboard.png"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    " arial=""><br></span><br></p>
+            </div>
+        </section>
+
+
+        <section id="createdownload">
+            <h2 class="title">Creating a Download</h2>
+            <div class="section-content">
+                <p>T<span style="font-size:12.0pt;line-height:115%;font-family:
+                    " arial="">he Downloads feature on TrainEasy enables admins and instructors easily share files with students.
+                                </span>
+                    
+                                <br></p>
+                    <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                    " arial="">This feature also enables you to restrict certain files to students that
+                                    are enrolled in sessions you sepecify. If no sessions are specified for a download, it will be available for
+                                    any registered student to download. <br>
+                                    The following file types are allowed: pdf, zip, mp4, 
+                    mp3, doc, docx, ppt, pptx, xls, xlsx, png, jpeg, gif, txt, csv. Please 
+                    note that security is not provided for image files
+                                    i.e. png, jpeg or gif files. Users might be able to 
+                    access these files via a direct link. If you want to securely share 
+                    these type of files, we recommend you put them in a zip archive.
+                                    <br></span></p>
+                    <p style="font-size:12.0pt;;font-family:
+                    " arial="">
+                                    To create a new download, login to the backend and click
+                     on the 'Downloads' menu option. Then click 'Create Download'
+                                    <br><br><img style="width: 259px;" src="https://intermaticsng.com/editor_images/05_2021/16208296008312.png" data-filename="clipboard.png"><br><br>
+                                    On the download creation page, fill in the name of the 
+                    download as well as its description. Also set 'Enabled' to 'Yes' or 
+                    'No'. Disabled
+                                    downloads will not be available to students. </p>
+                    <p style="font-size:12.0pt;;font-family:
+                    " arial=""><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208296005084.png" data-filename="clipboard.png"><br>
+                                    Next, click on the 'Save' button. After the download as 
+                    been saved, you will be redirected to the download edit page. On this 
+                    page, you can
+                                    add files to the download you just created as well as 
+                    assign the downloads to sessions/courses. </p>
+            </div>
+        </section>
+
+        <section id="homework">
+            <h2 class="title">Creating Homework</h2>
+            <div class="section-content">
+                <p>TrainEasy allows you to easily create homework for your students. Each Homework is assigned to a session or course. Students can easily respond to homework from their account area by submitting text or file upload.</p>
+                <p>To add a new homework, go to 'Homework'-'Add Homework'</p>
+                <p></p>
+                <p><img style="width: 274px;" src="https://intermaticsng.com/editor_images/05_2021/16208297225519.png" data-filename="clipboard.png"><br></p>
+                <p>This opens the add homework page:</p>
+                <p><img style="width: 1071px;" src="https://intermaticsng.com/editor_images/05_2021/16208297227293.png" data-filename="clipboard.png"></p>
+                <p><br></p>
+                <p>The following fields are provided on this page:</p>
+                <ol>
+                <li>Title: The short name of the homework.</li>
+                <li>Session/Course: The associated Session/Course. Only students enrolled into this session/course will be able to view the homework.</li>
+                <li>Due Date: The due date for the homework. Students may not be able to submit the homework after this date, depending on the 'Allow late submission' setting you set below.<br>
+                </li>
+                <li>Homework Instructions: The instructions students must follow while answering the homework.</li>
+                <li>Passmark: The minimum pass-mark required for the student to pass the homework.</li>
+                <li>Receive submission notifications: This determines if the instructor/admin who created the homework should receive a notification every time a homework is submitted.</li>
+                <li>Allow Late Submissions: This determines if students can still submit this homework after the due date.</li>
+                <li>Notify Session/Course Students: Determines if student enrolled into the selected session/course should be notified immediately the homework is create.<br><p><br></p>
+                </li>
+                </ol>
+            </div>
+        </section>
+
+
+        <section id="certificates">
+            <h2 class="title">Managing Certificates</h2>
+            <div class="section-content">
+                <p>
+                    TrainEasy comes with a powerful certificate generation 
+    feature that enables you totally eliminate the need for creating paper 
+    certificates for each Student at the conclusion of
+                your training programs. This feature can also be used to 
+    generate other documents such as admission letters.
+                    <br>
+                    The Certificate feature enables you to design documents 
+    with a drag and drop interface. You simply upload a blank copy of your 
+    existing or new certificates and then specify where the various text 
+    should go (e.g Student Name, Session Name, Completion Date etc.)
+                    <br>
+                Each certificate must be associated with a session. Also, 
+    certain conditions can be assigned to a certificate which the student 
+    must fulfill in order to be granted access to the document.
+                    <br> The following conditions are available: <br></p>
+    <ul>
+    <li>
+    <strong>Classes</strong>: You can specify which classes the Student must have attended before they can download the certificate.</li>
+    <li>
+    <strong>Tests:</strong> You can specify which tests a student must have completed successful before they can download the certificate</li>
+    </ul>
+    <p>
+    
+                To create a new certificate follow these steps
+                <br></p>
+    <ul>
+    <li>Login to the backend and click on the 'Certificates'-&gt;'Create Certificate' option</li>
+    <li>Fill in the available options. Please note that the 
+    'Certificate Image' should be a blank copy of your certificate 
+    (preferably in A4 size). Here is a sample: <br><img src="http://demo.traineasy.net/documentation/assets/images/certificate.jpg" alt="" style="max-width: 80%">
+    </li>
+    <li>Once you click the 'Save' button, you will be 
+    redirected to the certificate edit page.  On this page, you can drag and
+     drop the various 'placeholders' that are available. These placeholders 
+    let you specify where text like the student's name, session/course name etc 
+    will be placed on the downloaded certificate. </li>
+    <li>You can specify the mandatory classes and tests by clicking the relevant tabs.</li>
+    <li>Do note that, on the 'Mandatory Classes' tab, there 
+    is an option a the bottom called 'Search all sessions for attendance' if
+     you select this option, the system will search all existing sessions/courses 
+    for attendance of the classes you select in this tab. This is useful if
+     a student attends some classes in one session/course but attends the remaining
+     in another session/course.</li>
+    </ul>
+    <p>
+                <br></p>
+            </div>
+        </section>
+
+        <section id="attendance">
+            <h2 class="title">Managing Attendance</h2>
+          <div class="section-content">
+            <h4 class="page-title">Setting Attendance</h4>
+            <p>The attendance module enables you to set the attendance for each student per session and class. There are three attendance setting options available:<br><br>1. Attendance  Lets you set the attendance by selecting students individually.<br><br>2. Attendance (bulk)  Lets you set attendance of all enrolled students by ticking checkboxes<br><br>3. Attendance (import)  Lets you set attendance by importing a csv file.<br><br>Lets go over each method</p>
+            <p><br></p>
+            <p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><u><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Attendance</span></u></b></p>
+            
+            <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+            &quot;Arial&quot;,&quot;sans-serif&quot;">This option enables you set attendance by typing in a
+            students name. </span></p>
+            <p>
+            
+                        <br></p>
+            <p class="MsoNormal"><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208300245908.png" data-filename="clipboard.png"><span style="font-size:12.0pt;line-height:115%;font-family:
+            &quot;Arial&quot;,&quot;sans-serif&quot;;mso-no-proof:yes"></span></p>
+            <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+            &quot;Arial&quot;,&quot;sans-serif&quot;;mso-no-proof:yes"><br></span><span style="font-size:12.0pt;line-height:115%;font-family:
+            &quot;Arial&quot;,&quot;sans-serif&quot;;mso-no-proof:yes">Once
+            you type in a name, click on it to move it to the box on the right.<br></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Add
+            as many students as you want this way. Next select the session and the class.
+            Finally click submit to save the attendance.</span></p>
+            <p>
+            
+                        <br></p>
+            <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+            &quot;Arial&quot;,&quot;sans-serif&quot;"></span></p>
+            
+            
+            <h4 class="page-title">Attendance (Bulk)</h4>
+            <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+            &quot;Arial&quot;,&quot;sans-serif&quot;">This feature enables you to set the attendance by
+            selecting the relevant students from a list. Once you select a Session from the
+            dropdown, the list of enrolled students will appear</span></p>
+            <p>
+            
+                        <img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208300242303.png" data-filename="clipboard.png"><br></p>
+            <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+            &quot;Arial&quot;,&quot;sans-serif&quot;;mso-no-proof:yes"></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"></span></p>
+            <p>
+            
+                        <br></p>
+            <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+            &quot;Arial&quot;,&quot;sans-serif&quot;">In the Mark column, simply select the students that you
+            want to set attendance for and then click Save.</span></p>
+            <br><h4 class="page-title">Attendance (Import)</h4>
+            <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+            &quot;Arial&quot;,&quot;sans-serif&quot;">This feature enables you to set the attendance offline
+            and import later.</span></p>
+            <p class="MsoNormal"><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208300245689.png" data-filename="clipboard.png"><span style="font-size:12.0pt;line-height:115%;font-family:
+            &quot;Arial&quot;,&quot;sans-serif&quot;"><br></span></p>
+            <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+            &quot;Arial&quot;,&quot;sans-serif&quot;;mso-no-proof:yes"></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"></span></p>
+            <p>
+            
+                        <span style="font-size:12.0pt;line-height:115%;font-family:
+            &quot;Arial&quot;,&quot;sans-serif&quot;">The instructions on how to use this feature are available
+            on the page.</span></p>
+            <p><span style="font-size:12.0pt;line-height:115%;font-family:
+            &quot;Arial&quot;,&quot;sans-serif&quot;"><br></span><br></p>
+            
+            
+            <h4 class="page-title">Certificate Lists</h4>
+            
+            <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+            line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">This
+            feature enables you to download a list of students that attended a certain
+            number of classes in a session. You can generate two types of lists: </span></p>
+            <p>
+            
+                        <br></p>
+            <ul type="disc">
+            <li class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+                 line-height:normal;mso-list:l10 level1 lfo11;tab-stops:list .5in"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Specific
+                 classes: This lets you select the mandatory classes for a session</span></li>
+            <li class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+                 line-height:normal;mso-list:l10 level1 lfo11;tab-stops:list .5in"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Minimum number
+                 of classes: This enables you specify a minimum number of classes each
+                 student must have attended.</span></li>
+            </ul>
+            <p>
+            
+                        <br></p>
+            <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+            &quot;Arial&quot;,&quot;sans-serif&quot;">The search option enables you check for attendance
+            records from either the selected session or any other session. For example, a
+            student might have completed the classes you specify by attending two different
+            sessions. This option enables you add or exclude them from the list.</span></p>
+            <p>
+            
+                        <img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208300244312.png" data-filename="clipboard.png"><br></p>
+            <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+            &quot;Arial&quot;,&quot;sans-serif&quot;;mso-no-proof:yes"></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"></span></p>
+            <p>
+            
+                        <span style="font-size:12.0pt;line-height:115%;font-family:
+            &quot;Arial&quot;,&quot;sans-serif&quot;">A csv file will be generated showing the classes students
+            attended as well as the attendance dates.</span></p>
+            <p><span style="font-size:12.0pt;line-height:115%;font-family:
+            &quot;Arial&quot;,&quot;sans-serif&quot;"><br></span><br></p>
+            
+            
+            
+            
+            
+            <h4 class="page-title">Attendance Dates</h4>
+            <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+            &quot;Arial&quot;,&quot;sans-serif&quot;">This feature enables you to easily set the attendance
+            date for all the students in a session/course. By default, the date is set based on
+            the class date you specified during the session creation (for training sessions) or the date the student completed the class (for online courses). This feature enables
+            you to override that.</span></p>
+            <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+            &quot;Arial&quot;,&quot;sans-serif&quot;">To use this feature, simply select a session/course from a
+            dropdown and then pick a date</span></p>
+            <p class="MsoNormal"><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208300242015.png" data-filename="clipboard.png"><span style="font-size:12.0pt;line-height:115%;font-family:
+            &quot;Arial&quot;,&quot;sans-serif&quot;"><br></span></p>
+            <p>
+            
+                        <br></p>
+            <p class="MsoNormal"><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/16208300246910.png" data-filename="clipboard.png"><span style="font-size:12.0pt;line-height:115%;font-family:
+            &quot;Arial&quot;,&quot;sans-serif&quot;;mso-no-proof:yes"></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"></span></p>
+            <p>
+            
+                        <span style="font-size:12.0pt;line-height:115%;font-family:
+            &quot;Arial&quot;,&quot;sans-serif&quot;;mso-no-proof:yes"></span><br></p>
+          </div>
+        </section>
+
+        <section id="notes">
+            <h2 class="title">Revision Notes</h2>
+            <div class="section-content">
+                <h3>Creating a revision note</h3>
+                <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                &quot;Arial&quot;,&quot;sans-serif&quot;">Revision notes are intended to be pre or post class
+                summaries. Each revision note is associated with a session and a class. Only
+                students that are enrolled in a session can view the revision notes associated
+                with it.</span></p>
+                <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                &quot;Arial&quot;,&quot;sans-serif&quot;">To create a new revision note, click on the Add Note
+                option under Revision Notes.</span></p>
+                <p>
+                
+                            <img style="width: 271px;" src="https://intermaticsng.com/editor_images/05_2021/16208300965719.png" data-filename="clipboard.png"><br></p>
+                <p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                &quot;Arial&quot;,&quot;sans-serif&quot;;mso-no-proof:yes"></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"></span></p>
+                <br><p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+                &quot;Arial&quot;,&quot;sans-serif&quot;">The add note page has the following fields:</span></p>
+                <p><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+                mso-fareast-font-family:Arial"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+                mso-fareast-font-family:Arial">Title:
+                The note title</span></p>
+                <p><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+                mso-fareast-font-family:Arial"><span style="mso-list:Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+                mso-fareast-font-family:Arial">Session:
+                The note session</span></p>
+                <p><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+                mso-fareast-font-family:Arial"><span style="mso-list:Ignore">3.<span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+                mso-fareast-font-family:Arial">Class:
+                The note class</span></p>
+                <p><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+                mso-fareast-font-family:Arial"><span style="mso-list:Ignore">4.<span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+                mso-fareast-font-family:Arial">Description:
+                An optional description. The Description will be part of the notification email
+                a student will receive when the note is saved.</span></p>
+                <p><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+                mso-fareast-font-family:Arial"><span style="mso-list:Ignore">5.<span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+                mso-fareast-font-family:Arial">Content:
+                The content of the revision note.</span></p>
+                <p><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+                mso-fareast-font-family:Arial"><span style="mso-list:Ignore">6.<span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Notify
+                session students: If this is selected, each student enrolled in the session
+                will receive an email informing them about the availability of the revision
+                note.</span></p>
+                <p><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><br></span><br></p>
+                
+                <h3>Managing revision notes</h3>
+                <p>To manage existing revision notes, simply go to 'Revision notes'-'View Archive'</p>
+                <p><img style="width: 271px;" src="https://intermaticsng.com/editor_images/05_2021/16208300964418.png" data-filename="clipboard.png"><br></p>
+                <p></p>
+                <p>Click the 'Edit' or 'Delete' button for the revision note you want to modify or delete.</p>
+                <p><img style="width: 50%;" src="https://intermaticsng.com/editor_images/05_2021/1620830096326.png" data-filename="clipboard.png"><br></p>
+            </div>
+        </section>
+
+
+        <section id="content">
+            <h2 class="title">Content</h2>
+            <div class="section-content">
+
+                <div class="content-header">
+                    <h1>Content</h1>
+                </div>
+                <h2 class="title">Managing Articles</h2>
+                <div class="section-content">
+                    <p>TrainEasy articles are static pages of content that you would like to create to add information to your portal. Typically, you would use them to create pages like 'About Us', 'Vision', 'Mission' etc. Articles can be placed on the navigation menu for easy location by your visitors.</p>
+                    <p>To manage your articles, click on the 'Articles'-'Manage Articles' menu option</p>
+                    <p>The list of existing articles will be displayed. To create a new article, click on the 'Add Article' menu option</p>
+                    <p>This opens the article creation page</p>
+                    <p><img style="width: 876px;" src="./img/editor_images/03_2020/15845454225497.png" data-filename="clipboard.png"></p>
+                    <p>The fields on this page are described below:</p>
+                    <ol>
+                        <li>Title: This is the main heading of the article as it would appear on your site. <br><img style="width: 876px;" src="./img/editor_images/03_2020/15845454222481.png" data-filename="clipboard.png"><br>This will also be used as the browser title if the 'Meta Title' field is left blank</li>
+                        <li>Content: This will hold the text content of the article</li>
+                        <li>Slug: This is the Url identifier for the article e.g. htttps://yourportal.com/<b>who-we-are</b>. You can safely leave this blank and it will be generated automatically from the article title you specify.</li>
+                        <li>Meta Title: This contains the browser title for the article. If left blank, the article title will be used instead. This field is especially useful for Search Engine Optimization (SEO).</li>
+                        <li>Meta Description: This Contains the page description visible to search engines. The content of this field will not be visible while viewing the article in the browser but is very useful when optimizing the page for search engines.</li>
+                        <li>Enabled: Specify if the article can be viewed or not.</li>
+                        <li>Mobile: Specify if the article can be viewed on the mobile app (if you have configured that). Selecting this makes the article available on the API</li>
+                    </ol>
+                    <p>Click on the 'Create' button when done.<br></p>
+                    <p><br></p>
+                    <p> <br></p>
+                </div>
+                <h2 class="title">Managing Blog Posts</h2>
+                <div class="section-content">
+                    <p>TrainEasy comes with a blogging feature that enables you maintain an easy to use blog on your portal. The blog comes with categories and&nbsp; scheduling posts.</p>
+                    <h2>Managing Blog Categories</h2>
+                    <p>Blog posts can be organized into categories. It is recommended that you create your blog categories first before you start creating posts. To manage your categories, go to 'Blog'-'Manage Categories'</p>
+
+                    <p>This brings up the list of existing categories</p>
+                    <p>To add a new category, click on the 'Add New' button</p>
+                    <p><img style="width: 876px;" src="./img/editor_images/03_2020/15846269023939.png" data-filename="clipboard.png"></p>
+                    <p>Fill in the name and sort order of the category. The sort order is a number that determines the position of the category on the blog listing page in ascending order.</p>
+                    <p><br></p>
+                    <h2>Managing Posts</h2>
+                    <p>Blog posts are news-like entries that you add continuously to your site. To manage your blog posts, click on the 'Blog'-'Manage Posts' option</p>
+
+                    <p>This brings up the list of all blog posts.</p>
+                    <p><img style="width: 876px;" src="./img/editor_images/03_2020/15846269025228.png" data-filename="clipboard.png"></p>
+                    <p>This list shows the title of the post and its publish date. It also shows if the post is enabled or not. Disabled posts are not visible on the frontend.<br></p>
+                    <p>Click on the 'Add New' button to create a new post</p>
+                    <p><img style="width: 876px;" src="./img/editor_images/03_2020/15846269029040.png" data-filename="clipboard.png"></p>
+                    <p>Each field presented on this form is described below:</p>
+                    <ol>
+                        <li>Title: This is the main title of the blog post</li>
+                        <li>Content: This is the main content of the blog post</li>
+                        <li>Published on: This is the date you want the post to go live. Please note that if you set a future date as the publish date, then the post will not be visible on the frontend until that date.</li>
+                        <li>Categories: Select the categories that this post should belong to. You need to have already created the category as described above. You can assign a post to multiple categories.</li>
+                        <li>Enabled: Specify if the post should be visible or not.You would usually make a post disabled if you are still working on its content.<br>
+                        </li>
+                        <li>Cover Image: Select an image from your computer that will serve as the main image displayed for this post on the blog listing page.</li>
+                        <li>Meta Title: This is the browser page title for this post. If left blank, the post's title will be used. This field is especially useful for search engine optimization purposes.</li>
+                        <li>Meta Description: This is the internal description for this post visible to search engines. This field is useful for search engine optimization.&nbsp; </li>
+                    </ol>
+                    <p>Click on the 'Create' button to add your new post.<br></p>
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+        <section id="zoom">
+            <div class="content-header">
+                <h1>Zoom Setup</h1>
+            </div>
+            <h2 class="title"></h2>
+            <div class="section-content">
+                <p>
+                    TrainEasy ships with powerful zoom integration that enables your students attend zoom classes from right inside their lectures!
+                    
+                        <br>
+                    Students do not need to enter meeting ids, names or any other data as that is supplied from their profile on the portal. 
+                    <br>
+                    Follow these steps to enable Zoom
+
+                </p>
+                   
+                <ul>
+                    <li>Visit <a href="https://marketplace.zoom.us/">https://marketplace.zoom.us/</a> and register an account.</li>
+                    <li>At the top-right, click 'Develop'-'Build App'</li>
+                    <li>Select JWT</li>
+                    <li>Obtain your API key and API secret</li>
+                    <li>Login to your TrainEasy admin area. Go to 'Settings'-'Site Settings'</li>
+                    <li>Click on the 'Zoom Settings' tab and save your credentials there</li>
+                    <li>Click the 'Save Changes' button</li>
+                </ul>
+
+                <p>
+                    You can now add a Zoom meeting to any lecture simply by specifying it's Meeting ID and Password.
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+
+        <section id="upgrade">
+            <div class="content-header">
+                <h1>Upgrade Guide</h1>
+            </div>
+            <h2 class="title"></h2>
+            <div class="section-content">
+                <p>
+                    Upgrading TrainEasy is straightforward. First create
+                    a full backup of your installation.
+                    Also, if you have created any custom templates or gateways, ensure you copy these to a safe location outside the application and restore them once
+                 the upgrade is completed. </p>
+
+                <p>
+                    Follow these steps to upgrade your installation: <br>
+                    <ul>
+                        <li>Extract the contents of the TrainEasy zip archive downloaded from CodeCanyon</li>
+                <li>You will see a file called app.zip. Upload this file to the <strong>update</strong> directory in the root directory of the application.
+                 (If you do not see this directory, create it and make it writable)</li>
+                <li>Login to your admin backend and go to 'Settings'-'Upgrade'</li>
+                <li>Click on the 'Update' button and you are done!</li>
+                    </ul>
+                </p>
+
+                <p><br></p>
+                <h4>Note to version 2 users</h4>
+                <p>If you are using the older version of TrainEasy
+                    i.e. the version that runs on Zend Framework, please note that you will
+                    not be able to upgrade from that version
+                    to this new version. This is because the new version
+                    runs on the Laravel framework and is hence not backwards compatible.
+                    You will need to install the application afresh and setup your new
+                    installation</p>
+                <p><br></p>
+
+            </div>
+
+
+        </section>
+
+
+        <section id="zoom">
+            <div class="content-header">
+                <h1>Zoom Setup</h1>
+            </div>
+            <div class="section-content">
+                <div><p>
+                    TrainEasy ships with powerful zoom integration that enables your students attend zoom classes from right inside their lectures!
+
+                    <br>
+                    Students do not need to enter meeting ids, names or any other data as that is supplied from their profile on the portal.
+                    <br>
+                    Follow these steps to enable Zoom
+
+                </p>
+
+                    <ul>
+                        <li>Visit <a href="https://marketplace.zoom.us/">https://marketplace.zoom.us/</a> and register an account.</li>
+                        <li>At the top-right, click 'Develop'-'Build App'</li>
+                        <li>Select JWT</li>
+                        <li>Obtain your API key and API secret</li>
+                        <li>Login to your TrainEasy admin area. Go to 'Settings'-'Site Settings'</li>
+                        <li>Click on the 'Zoom Settings' tab and save your credentials there</li>
+                        <li>Click the 'Save Changes' button</li>
+                    </ul>
+
+                    <p>
+                        You can now add a Zoom meeting to any lecture simply by specifying it's Meeting ID and Password.
+                    </p></div>
+            </div>
+        </section>
+
+
+
+        <section id="frontend">
+            <div class="content-header">
+                <h1>Disable Frontend</h1>
+            </div>
+            <div class="section-content">
+                <p>TrainEasy provides a feature that enables you to completely disable the frontend features of your site. This means pages like the Homepage, Blog, Articles and Contact pages will not be accessible to users. With the frontend disabled, the default landing page will be the login page. Users can also register if registration is enabled. Only logged in users will be able to view your course/session catalog.</p>
+                <p>To disable the frontend, login to your admin section and go to 'Settings'-'Disable Frontend'</p>
+                <p><img style="width: 270px;" src="https://intermaticsng.com/editor_images/12_2021/16408792724222.png" data-filename="clipboard.png"></p>
+                <p><br></p>
+                <p>On the 'Disable Frontend' page, select 'Disabled' and save your changes.<br></p>
+            </div>
+        </section>
+
+
+        <section id="dtheme">
+            <div class="content-header">
+                <h1>Dashboard Theme</h1>
+            </div>
+            <div class="section-content">
+                <p>If you would like to change the default blue theme of both the Admin and Student dashboards, you can do so easily by logging into your admin section and going to 'Settings'-'Dashboard Theme'</p>
+                <p><img style="width: 270px;" src="https://intermaticsng.com/editor_images/12_2021/16408792724222.png"></p>
+                <p>On this page you will see a color picker. Click on the color picker icon or on the text box and you will be presented with a color selection dialog. Choose your preferred color and save. Save your changes and you are done!</p>
+                <p><img style="width: 754px;" src="https://intermaticsng.com/editor_images/12_2021/16408797081468.png" data-filename="clipboard.png"><br></p>
+                <p><br></p>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

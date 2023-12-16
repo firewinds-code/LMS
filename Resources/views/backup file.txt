@@ -1,0 +1,41 @@
+<script>
+$(document).ready(function(){
+
+  $('.trainingTest').addClass("disabled");
+$('.trainingTest').each(function(){
+    if($(this).hasClass("disabled")){
+            $(this).attr("href","javaScript::void(0)");
+        }
+});
+
+var no_of_quetion = "<?php echo end($sum) ?>";
+
+if(no_of_quetion >= 2)
+{ 
+     $('.question1').removeClass('disabled');
+     for(i=2; i<=no_of_quetion;i++)
+    {
+         $('.question'+i).addClass('disabled');
+    }
+}
+
+$('.questionAck1').click(function(){
+            $('.question1').addClass('disabled');
+            $('.question2').removeClass('disabled');
+    });
+
+$('.questionAck'+no_of_quetion).click(function(){
+    $('.questionAck'+no_of_quetion).removeClass('disabled');
+    const div = document.querySelector('.questionAck'+no_of_quetion);
+        if(div.classList.contains('disabled'))
+        {
+            $('.trainingTest').addClass('disabled');
+            $('.trainingTest').attr('href', 'javaScript::void(0)');
+        }else{
+            $('.trainingTest').removeClass('disabled');
+            $('.trainingTest').attr('href', "{{  route('student.test.taketest',array('id'=>$testRow->test_id)) }}");
+        } 
+    });  
+
+});
+</script>

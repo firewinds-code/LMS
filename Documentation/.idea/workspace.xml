@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="58f74afd-0bf3-4886-be80-9e6ff1ec48e5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="1d8AIsiHFGOOidS8mR1f8vkBNhT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="58f74afd-0bf3-4886-be80-9e6ff1ec48e5" name="Default Changelist" comment="" />
+      <created>1591796269849</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591796269849</updated>
+      <workItem from="1591796271475" duration="17435000" />
+      <workItem from="1591869284338" duration="2387000" />
+      <workItem from="1591891243401" duration="967000" />
+      <workItem from="1591894151640" duration="403000" />
+      <workItem from="1591951030225" duration="623000" />
+      <workItem from="1591967337528" duration="1995000" />
+      <workItem from="1594923924140" duration="57000" />
+      <workItem from="1607087749439" duration="8067000" />
+      <workItem from="1610619143167" duration="3193000" />
+      <workItem from="1611667852111" duration="3124000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="100" y="172" width="1166" height="568" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611754646652">
+      <screen x="0" y="72" width="1366" height="768" />
+    </state>
+    <state x="100" y="172" width="1166" height="568" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1366.0.1600.900/0.72.1366.768@0.72.1366.768" timestamp="1611754646652" />
+    <state x="1366" y="230" width="1517" height="630" key="dock-window-1" timestamp="1610624872891">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state x="0" y="335" width="1295" height="537" key="dock-window-1/1366.0.1600.900/0.132.1366.768@1366.0.1600.900" timestamp="1607102287730" />
+    <state x="1366" y="230" width="1517" height="630" key="dock-window-1/1366.0.1600.900/0.72.1366.768@1366.0.1600.900" timestamp="1610624872891" />
+  </component>
+</project>
